@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Cloister Black Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cloister Black Light"), url("CloisterBlack.woff") format("woff");
+}
+
+h1 {
+  font-family: "Cloister Black Light";
+  font-size: 4em;
+  background:rgb(0, 0, 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
