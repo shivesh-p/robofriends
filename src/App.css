@@ -8,6 +8,4 @@
 h1 {
   font-family: "Cloister Black Light";
   background:rgb(0, 0, 0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
