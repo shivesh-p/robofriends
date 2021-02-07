@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import CardList from "./CardList";
 import SearchComponent from "./SearchComponent";
 import "./App.css";
-import Scroll from './Scroll'
+import Scroll from "./Scroll";
+import ErrorBoundary from "./ErrorBoundary";
 
 class App extends Component {
   constructor() {
@@ -12,7 +13,6 @@ class App extends Component {
       searchField: "",
     };
   }
-
   onSearchChange = (event) => {
     this.setState({ searchField: event.target.value });
   };
@@ -37,7 +37,9 @@ class App extends Component {
         <h1 className="f1">RoboFriends</h1>
         <SearchComponent searchChange={this.onSearchChange} />
         <Scroll>
-          <CardList robots={filteredRobots} />
+          <ErrorBoundary>
+            <CardList robots={filteredRobots} />
+          </ErrorBoundary>
         </Scroll>
       </div>
     );
