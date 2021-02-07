@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { robotss } from './robots'
 
 class ErrorBoundary extends Component {
     constructor(props) {
