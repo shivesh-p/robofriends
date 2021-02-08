@@ -5,7 +5,7 @@ import App from './App'
 import reportWebVitals from "./reportWebVitals";
 import "tachyons";
 import {createStore} from 'redux'
-import {Provider,connect} from 'react-redux'
+import {Provider} from 'react-redux'
 import { searchRobots } from "./reducer";
 
 const store = createStore(searchRobots)
